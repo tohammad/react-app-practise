@@ -1,6 +1,6 @@
 import "./App.css";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
-function App() {
+const App = () => {
   const expenses = [
     {
       title: "Vehicle Insurance",
