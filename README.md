@@ -5,3 +5,4 @@
 3. Custom Compoment - Styling
 4. Resuable Custom Component
 5. Resuable Custom Component using props
+6. Split Components and date styling
