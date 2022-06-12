@@ -7,3 +7,5 @@
 5. Resuable Custom Component using props (Share data using props)
 6. Split Components and date styling
 7. Wrapper component using children props
+8. Organize components
+9. Arrow functions
