@@ -10,3 +10,5 @@
 8. Organize components
 9. Arrow functions
 10. State and User Input
+11. Form Submission
+12. Two way binding
