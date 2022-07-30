@@ -1,0 +1,13 @@
+@import './sass/variables';
+@import './sass/color';
+
+// Blue theme
+@import './sass/blue-theme';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: map-get($defaultTheme, fontFamily);
+    background-color: map-get($defaultTheme, backgroundColor);
+    overflow-x: hidden;
+}

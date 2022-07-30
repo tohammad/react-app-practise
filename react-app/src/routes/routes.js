@@ -1,0 +1,32 @@
+export const ROUTES = [
+  {
+    order: 1,
+    displayCondition: [],
+    className: '',
+    navigateTo: '/dashboard',
+    title: '',
+    icon: '',
+    isActive: [],
+    subMenus: [],
+  },
+ {
+    order: 2,
+    displayCondition: [],
+    className: '',
+    navigateTo: '/todo',
+    title: '',
+    icon: '',
+    isActive: [],
+    subMenus: [],
+  },
+  {
+    order: 2,
+    displayCondition: [],
+    className: '',
+    navigateTo: '/todo',
+    title: '',
+    icon: '',
+    isActive: [],
+    subMenus: [],
+  },
+];

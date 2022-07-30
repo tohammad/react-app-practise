@@ -1,0 +1,135 @@
+// Main colors
+$blue: #0661a3;
+$black: #0a0912;
+$gray: #e2e3e2;
+$white: #ffffff;
+
+// Old colors
+$defaultBackground: #eceff5;
+
+// Nav colors
+$navBackground: #043b60;
+$navActiveMenuBackground: #052a47;
+$navActiveSubmenuBackground: #071c32;
+
+// Button colors
+$buttonBlue: #0060a2;
+$red: #da1e27;
+
+// Input colors
+$inputBorder: #bcbcbc;
+$inputFocusBorder: #0f61fd;
+$fileSelectedBg: #f3f3f3;
+
+// Notification colors
+$notificationInfo: #408bfc;
+$notificationBgInfo: #ebf3ff;
+$notificationError: #fa4d55;
+$notificationBgError: #feeced;
+$notificationWarning: #ffcb1c;
+$notificationBgWarning: #fffaeb;
+$notificationSuccess: #3dba61;
+$notificationBgSuccess: #eaf7ee;
+
+// Link color
+$linkActiveBorder: #151b22;
+
+// Tab color
+$tabBorder: #dcdcdc;
+$dimmedTextColor: #666666;
+
+// Tag colors
+$tagText: #0a0912;
+$tagBgColor: #dcdcdc;
+$tagIcon: #161616;
+$tagIconHoverBg: #cacaca;
+
+// Tooltip color
+$tooltipBg: #3d3d3d;
+$iconFillColor: #525252;
+$navIconFillColor: #0a0912;
+
+// Dropdown color
+$dropdownHover: #f4f4f4;
+
+// Overflow Menu color
+$overflowMenuHover: #e5e5e5;
+
+// Status Pill colors
+$statusInProgress: #e3dcf3;
+$statusInProgressText: #4617b1;
+$statusStarted: #ebf3ff;
+$statusStartedText: #408bfc;
+$statusPublished: #eaf7ee;
+$statusPublishedText: #3dba61;
+$statusPending: #fbeade;
+$statusPendingText: #e37625;
+$statusContactNeeded: #fff1b5;
+$statusContactNeededText: #9f780e;
+$statusRemoved: #feeced;
+$statusRemovedText: #fa4d55;
+$statusReturned: #e5e5e5;
+$statusReturnedText: #666666;
+$statusReadyForReview: #d3e3ef;
+$statusReadyForReviewText: #0661a3;
+$statusLifecycleUpdatesReview: #d3e3ef;
+$statusLifecycleUpdatesReviewText: #0661a3;
+
+// Content Switcher colors
+$contentSwitcherBg: #eaf2f8;
+$contentSwitcherTabHoverBg: #c9deec;
+$contentSwitcherSelectedTabHoverBg: #97bed9;
+
+// Table colors
+$tableHeaderBg: #97bed9;
+$tableRowSelectedBg: #d5e4ef;
+$tableRowDimmedText: #666666;
+$paginationText: #393939;
+$tableExpandedBg: #f4f4f4;
+
+// Font styles
+$headingFont: 'IBM Plex Sans', 'sans-serif';
+$normalFont: 'Source Sans Pro', 'sans-serif';
+
+// Nav sizes
+$mainNavBroderWidth: 4px;
+
+// Font sizes
+$extraSmallFontSize: 0.625rem;
+$smallFontSize: 0.75rem;
+$mediumFontSize: 0.813rem;
+$normalFontSize: 0.875rem;
+$titleFontSize: 1rem;
+$largeFontSize: 1.125rem;
+$extraLargeFontSize: 1.5rem;
+
+// Icon sizes
+$cardIconSize: 2.1875rem;
+$navIconSize: 1.25rem;
+
+// Tab Style
+$tabGray: #676767;
+// Tag relationship status colors
+$statusPendingText: #e37625;
+$statusPendingBg: #fbeade;
+
+$statusAcceptedText: #408bfc;
+$statusAcceptedBg: #ebf3ff;
+
+$statusDeclinedText: #fa4d55;
+$statusDeclinedBg: #feeced;
+
+$statusProfileCompleteText: #4617b1;
+$statusProfileCompleteBg: #e3dcf3;
+
+$statusReadyForReviewText: #0661a3;
+$statusReadyForReviewBg: #bfd7e8;
+
+$statusReturnedToSupplierText: #666666;
+$statusReturnedToSupplierBg: #e5e5e5;
+
+$statusOnboardedText: #3dba61;
+$statusOnboardedBg: #eaf7ee;
+
+$statusLifecycleText: #0661a3;
+$statusLifecycleBg: #d3e3ef;
