@@ -1,11 +1,21 @@
 import './App.css';
-import FunctionComponent from'./FunctionComponent';
+import StyledComponent from'./StyledComponent';
+import ReactComponent from'./ReactComponent';
+import StyledComponentWithProps from'./StyledComponentWithProps';
+import StyledComponentWithInheritance from'./StyledComponentWithInheritance';
+import StyledComponentWithSCSS from'./StyledComponentWithSCSS';
+import StyledComponentWithAnimation from'./StyledComponentWithAnimation';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FunctionComponent name="I am a function component"/>
+        <StyledComponent/>
+        <ReactComponent/>
+        <StyledComponentWithProps/>
+        <StyledComponentWithInheritance/>
+        <StyledComponentWithSCSS/>
+        <StyledComponentWithAnimation/>
       </header>
       
     </div>
