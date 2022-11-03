@@ -15,10 +15,10 @@ class ClassComponent extends React.Component {
 
   componentDidUpdate() {
     // compare the props first
-    if (this.props.userName !== prevProps.userName) {
-      // make network call
-      this.fetchData(this.props.userID);
-    }
+    // if (this.props.userName !== prevProps.userName) {
+    //   // make network call
+    //   this.fetchData(this.props.userID);
+    // }
   }
 
   handleClick = () => {
