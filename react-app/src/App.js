@@ -1,11 +1,11 @@
 import './App.css';
-import ClassComponent from'./ClassComponent';
+import ComponentUseState from'./ComponentUseState';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ClassComponent name="I'm class component"/>
+        <ComponentUseState name="I'm class component"/>
       </header>
       
     </div>
