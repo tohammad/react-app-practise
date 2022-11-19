@@ -1,11 +1,11 @@
 import './App.css';
-import ComponentUseState from'./ComponentUseState';
+import ComponentUseEffect from'./ComponentUseEffect';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ComponentUseState name="I'm class component"/>
+        <ComponentUseEffect/>
       </header>
       
     </div>
