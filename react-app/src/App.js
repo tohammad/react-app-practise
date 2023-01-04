@@ -1,11 +1,11 @@
 import "./App.css";
-import Parent from "./Parent";
+import Layout from "./Layout";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Parent/>
+        <Layout />
       </header>
     </div>
   );
