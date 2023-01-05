@@ -1,20 +1,19 @@
-import { useLayoutEffect, useState } from "react";
+import useFetch from "./useFetch";
 const Layout = () => {
-  const [value, setValue] = useState(0);
-  useLayoutEffect(() => {
-    for (let i = 0; i < 9000; i++) {
-      console.log(i);
-    }
-    if (value === 0) {
-      setValue(10 + Math.random() * 200);
-    }
-  }, [value]);
+  const [users, error] = useFetch("https://jsonplaceholder.typicode.com/users");
+
   return (
     <>
-      <div>
-        <h2>useLayoutEffect: {value}</h2>
-        <button onClick={() => setValue(0)}>Change Value</button>
-      </div>
+      {users && users.length > 0 && (
+        <div class="listItems col-12">
+          <ul class="todo">
+            {users.map((user, index) => {
+              return <li key={index}>{user.name}</li>;
+            })}
+          </ul>
+        </div>
+      )}
+      {error && <h2>No record found</h2>}
     </>
   );
 };
