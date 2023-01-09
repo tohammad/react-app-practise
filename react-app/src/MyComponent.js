@@ -1,15 +1,18 @@
-import { useId } from "react";
+import { useState, React, useEffect } from "react";
 const MyComponent = () => {
-  const id = useId();
+  const [text, setText] = useState("initial text");
+  const handleClick = async () => {
+    setText("changed text");
+  };
+
+  useEffect(() => {
+    alert(text);
+  }, [text]);
   return (
     <>
       <div>
-        <label htmlFor={`${id}-email`}>Email</label>
-        <input id={`${id}-email`} type="email" />
-      </div>
-      <div>
-        <label htmlFor={`${id}-password`}>Password</label>
-        <input id={`${id}-password`} type="password" />
+        <button onClick={() => handleClick()}>Change Text</button>
+        <h2>{text}</h2>
       </div>
     </>
   );
