@@ -1,11 +1,11 @@
 import "./App.css";
-import MyComponent1 from "./MyComponent1";
+import MyComponent from "./MyComponent";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <MyComponent1/>
+        <MyComponent/>
       </header>
     </div>
   );
