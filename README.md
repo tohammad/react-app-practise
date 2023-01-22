@@ -14,4 +14,4 @@
 12. Two way binding
 13. project structure
 14. Hooks
-Redux
+15. Redux
