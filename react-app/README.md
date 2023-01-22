@@ -1,1 +1,1 @@
-npm i redux react-redux
+npm i redux react-redux @reduxjs/toolkit

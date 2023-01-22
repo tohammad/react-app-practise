@@ -1,19 +1,19 @@
 import { useSelector, useDispatch } from "react-redux";
+import { counterActions } from "../store/index";
 import { useState } from "react";
 const Counter = () => {
   const counter = useSelector((state) => state.counter);
   const [number, setNumber] = useState(0);
   const dispatch = useDispatch();
   const handleIncrement = () => {
-    dispatch({ type: "increment", amount: number });
+    dispatch(counterActions.increment({ amount: parseInt(number) }));
+  };
+  const handleDecrement = () => {
+    dispatch(counterActions.decrement({ amount: parseInt(number) }));
   };
 
   const handleNumberChange = (value) => {
     setNumber(value);
-  };
-
-  const handleDecrement = () => {
-    dispatch({ type: "decrement", amount: number });
   };
 
   return (
