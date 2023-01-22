@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.counter {
+  margin: 1rem;
+}
+
+input[type=number] {
+  width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  width: 10px;
+  opacity: 1;
+}
