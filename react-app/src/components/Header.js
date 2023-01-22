@@ -6,7 +6,7 @@ const Header = () => {
   const handleLogout = (event) => {
     event.preventDefault();
     dispatch(authActions.logout());
-  };  
+  };
   return (
     <header>
       <h1>Redux</h1>
@@ -20,7 +20,9 @@ const Header = () => {
               <a href="/">Team Tasks</a>
             </li>
             <li>
-              <a onClick={handleLogout} href="/">Logout</a>
+              <a onClick={handleLogout} href="/">
+                Logout
+              </a>
             </li>
           </ul>
         </nav>
