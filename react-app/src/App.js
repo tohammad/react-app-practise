@@ -1,18 +1,29 @@
-import "./App.css";
-import Counter from "./components/Counter";
-import Header from "./components/Header";
-import Auth from "./components/Auth";
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import Cart from "./components/Cart/Cart";
+import Layout from "./components/Layout/Layout";
+import Products from "./components/Shop/Products";
+
+import {sendCartData} from "./store/cart-slice";
+import { useSelector, useDispatch } from "react-redux";
 function App() {
-  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const showCart = useSelector((state) => state.ui.cartIsVisible);
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    // const sendData = async () => {
+    //   await fetch("https://localhost:3000/api/", {
+    //     method: "PUT",
+    //     body: JSON.stringify(cart),
+    //   });
+    // };
+    // sendData();
+    dispatch(sendCartData(cart));
+  }, [cart, dispatch]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-        {!isAuthenticated && <Auth />}
-        {isAuthenticated && <Counter></Counter>}
-      </header>
-    </div>
+    <Layout>
+      {showCart && <Cart />}
+      <Products />
+    </Layout>
   );
 }
 
