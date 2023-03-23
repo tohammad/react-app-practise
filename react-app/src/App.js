@@ -1,16 +1,20 @@
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Login from "./components/Login";
-import ErrorHandler from "./components/ErrorHandler";
+
 import NavBar from "./components/NavBar";
-import Dashboard from "./components/Dashboard";
+
+const Home = lazy(() => import("./components/Home"));
+const About = lazy(() => import("./components/About"));
+const Contact = lazy(() => import("./components/Contact"));
+const Login = lazy(() => import("./components/Login"));
+const Dashboard = lazy(() => import("./components/Dashboard"));
+const ErrorHandler = lazy(() => import("./components/ErrorHandler"));
 
 const App = () => {
   return (
     <>
       <NavBar />
+      <Suspense fallback={<div className="container">Loading...</div>}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -19,6 +23,7 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<ErrorHandler />} />
       </Routes>
+      </Suspense>
     </>
   );
 };
