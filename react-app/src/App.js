@@ -9,20 +9,25 @@ const Contact = lazy(() => import("./components/Contact"));
 const Login = lazy(() => import("./components/Login"));
 const Dashboard = lazy(() => import("./components/Dashboard"));
 const ErrorHandler = lazy(() => import("./components/ErrorHandler"));
+const ContactProfile = lazy(() => import("./components/ContactProfile"));
+const ContactLocation = lazy(() => import("./components/ContactLocation"));
 
 const App = () => {
   return (
     <>
       <NavBar />
       <Suspense fallback={<div className="container">Loading...</div>}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="*" element={<ErrorHandler />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />}>
+            <Route path="profile" element={<ContactProfile />} />
+            <Route path="location" element={<ContactLocation />} />
+          </Route>
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="*" element={<ErrorHandler />} />
+        </Routes>
       </Suspense>
     </>
   );
